@@ -11,7 +11,7 @@ function Project() {
                 <div className="project">
                     <img src={smartCanteenScreenshot} className="zoom" alt="thumbnail" width="100%" />
                     <h2>Smart Canteen</h2>
-                    <p>A full stack application designed to make canteen operations more efficient</p>
+                    <p>A full stack application designed to make canteen operations more efficient.</p>
                 </div>
                 <div className="project">
                     <img src={ShipSimScreenshot} className="zoom" alt="thumbnail" width="100%" />

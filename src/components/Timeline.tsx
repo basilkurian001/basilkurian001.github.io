@@ -20,10 +20,10 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Flutter Developer</h3>
+            <h3 className="vertical-timeline-element-title">Flutter Developer Intern</h3>
             <h4 className="vertical-timeline-element-subtitle">ICT Academy of Kerala, Technopark Trivandrum</h4>
             <p>
-              Flutter app development, API Design
+              Flutter app development
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
