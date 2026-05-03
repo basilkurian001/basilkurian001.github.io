@@ -5,6 +5,7 @@ import androidLogo from "../assets/images/white_android_logo.png"
 import gameControllerIcon from "../assets/images/gameController_icon_white.png"
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
+import { Server } from "lucide-react";
 
 const labelsFirst = [
     "JavaScript",
@@ -27,6 +28,11 @@ const labelsSecond = [
 const labelsThird = [
     "Unity",
     "C#",
+];
+
+const labelsFourth = [
+    "AWS",
+    "Linux",
 ];
 
 function Expertise() {
@@ -66,6 +72,23 @@ function Expertise() {
                         <div className="flex-chips">
                             <span className="chip-title">Tech stack:</span>
                             {labelsThird.map((label, index) => (
+                                <Chip key={index} className='chip' label={label} />
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="skill">
+                        <Server size={48} />
+                        <h3>Cloud and System Administration</h3>
+                        <p>
+                            I have hands-on experience working with cloud infrastructure, including provisioning and managing AWS EC2 instances, 
+                            configuring Linux environments, and ensuring reliable system performance. 
+                            I’ve worked on server setup, SSH access, and basic deployment workflows while focusing on stability 
+                            and efficient resource usage.
+                        </p>
+                        <div className="flex-chips">
+                            <span className="chip-title">Tech stack:</span>
+                            {labelsFourth.map((label, index) => (
                                 <Chip key={index} className='chip' label={label} />
                             ))}
                         </div>
