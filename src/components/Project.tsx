@@ -2,8 +2,10 @@ import React from "react";
 import smartCanteenScreenshot from '../assets/images/smart_canteen_screenshot.png'
 import ShipSimScreenshot from '../assets/images/ship_sim_screenshot.png'
 import '../assets/styles/Project.scss';
+import { useNavigate } from "react-router-dom";
 
 function Project() {
+    const navigate = useNavigate();
     return (
         <div className="projects-container" id="projects">
             <h1>Personal Projects</h1>
@@ -18,6 +20,12 @@ function Project() {
                     <h2>Ship Simulator</h2>
                     <p>A Ship Simulator built using Unity Engine.</p>
                 </div>
+            </div>
+
+            <div className="view-all">
+                <button className="view-all-btn" onClick={() => navigate("/AllProjects")}>
+                    View All Projects →
+                </button>
             </div>
         </div>
     );
