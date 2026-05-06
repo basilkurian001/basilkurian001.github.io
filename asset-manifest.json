@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.3427924c.css",
-    "main.js": "/static/js/main.47f211a4.js",
+    "main.css": "/static/css/main.d2760f6f.css",
+    "main.js": "/static/js/main.4f731776.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/ship_sim_screenshot.png": "/static/media/ship_sim_screenshot.87b4f25e586b214098e5.png",
     "static/media/my_photo.jpg": "/static/media/my_photo.a81fef82541e90292ad1.jpg",
     "static/media/smart_canteen_screenshot.png": "/static/media/smart_canteen_screenshot.9b62a119befb71906a62.png",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/resumate_screenshot.png": "/static/media/resumate_screenshot.598e5380d1b1a5ccfc12.png",
     "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/white_android_logo.png": "/static/media/white_android_logo.46d748e7e94e68b2476b.png",
     "static/media/full_stack_logo.png": "/static/media/full_stack_logo.2b3319aa0d688520af90.png",
     "static/media/gameController_icon_white.png": "/static/media/gameController_icon_white.d4e984fd226aa8da6ff1.png",
     "index.html": "/index.html",
-    "main.3427924c.css.map": "/static/css/main.3427924c.css.map",
-    "main.47f211a4.js.map": "/static/js/main.47f211a4.js.map",
+    "main.d2760f6f.css.map": "/static/css/main.d2760f6f.css.map",
+    "main.4f731776.js.map": "/static/js/main.4f731776.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3427924c.css",
-    "static/js/main.47f211a4.js"
+    "static/css/main.d2760f6f.css",
+    "static/js/main.4f731776.js"
   ]
 }
