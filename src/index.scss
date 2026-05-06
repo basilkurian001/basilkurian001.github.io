@@ -26,10 +26,18 @@ a {
 
 a:hover {
   color: #5000ca;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
-p, a, h1, h2, h3, h4, h5, label, button {
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+label,
+button {
   color: white;
   font-family: "Lato", sans-serif;
 }
@@ -51,7 +59,9 @@ p, a, h1, h2, h3, h4, h5, label, button {
 }
 
 .navigation-bar-responsive {
-  span, p {
+
+  span,
+  p {
     color: #0d1116;
     font-family: "Lato", sans-serif;
   }
@@ -100,13 +110,21 @@ p, a, h1, h2, h3, h4, h5, label, button {
     background-color: #f8f9fa;
   }
 
-  p, a, h1, h2, h3, h4, h5, label, button {
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  label,
+  button {
     color: #0d1116;
   }
 
   a:hover {
     color: #5000ca;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
   }
 
   .navigation-bar svg {
@@ -165,6 +183,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
   margin-top: 20px;
   font-size: 10px;
 }
+
 .view-all-btn {
   background: transparent;
   border: 2px;
@@ -175,14 +194,18 @@ p, a, h1, h2, h3, h4, h5, label, button {
   padding-left: 3px;
   padding-bottom: 5px;
 }
+
 .view-all-btn:hover {
   background-color: currentColor;
-  color: rgba(127, 117, 117, 0.33); /* for dark mode this flips nicely */
+  color: rgba(127, 117, 117, 0.33);
+  /* for dark mode this flips nicely */
 }
+
 /* Dark mode → white text */
 .dark-mode .view-all {
   color: white;
 }
+
 .dark-mode .view-all-btn {
   border-color: white;
 }
@@ -191,6 +214,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
 .light-mode .view-all {
   color: black;
 }
+
 .light-mode .view-all-btn:hover {
   color: rgba(31, 27, 27, 0.751);
 }
@@ -266,6 +290,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .dark-mode .project-links {
   border-color: white;
 }
@@ -274,4 +299,29 @@ p, a, h1, h2, h3, h4, h5, label, button {
   background-color: currentColor;
   color: black;
 }
+
 //====================================================
+
+//==================== Project Details page
+.project-page {
+  padding: 100px 10%;
+  width: 100%;
+  max-width: 900px;
+  //margin: auto;
+}
+
+.project-page img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.project-page ul {
+  text-align: left;
+}
+
+.dark-mode .project-page ul {
+  color: white;
+}
+
+//=============================================

@@ -11,8 +11,12 @@ import {
 import FadeIn from "./components/FadeIn";
 import AllProjects from "./pages/AllProjects";
 import ProjectsNavbar from "./components/AllProjectsPage/AllProjectsNavbar"; // 👈 new navbar
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.scss";
+import ResuMate from "./pages/projects/ResuMate";
+//import SmartCanteen from "./pages/projects/SmartCanteen";
+//import ShipSimulator from "./pages/projects/ShipSim";
 
 function App() {
   const [mode, setMode] = useState<string>("dark");
@@ -58,6 +62,15 @@ function App() {
               </>
             }
           />
+
+          <Route path="/projects/resumate" element={
+            <>
+              <ProjectsNavbar mode={mode} modeChange={handleModeChange} />
+              <ResuMate />
+            </>
+          } />
+          {/* <Route path="/projects/smart-canteen" element={<SmartCanteen />} />
+          <Route path="/projects/ship-simulator" element={<ShipSimulator />} /> */}
 
         </Routes>
 

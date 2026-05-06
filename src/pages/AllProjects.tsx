@@ -2,9 +2,11 @@ import React, { useEffect } from "react";
 import smartCanteen from "../assets/images/smart_canteen_screenshot.png";
 import shipSim from "../assets/images/ship_sim_screenshot.png";
 import resuMate from "../assets/images/resumate_screenshot.png";
-
+import { useNavigate } from "react-router-dom";
 
 function AllProjects() {
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -17,6 +19,7 @@ function AllProjects() {
       image: resuMate,
       description: "An Ai based resume analyzer designed to make your resume more professional using the power of Artificial Intelligence.",
       live: "https://resumate.duckdns.org",
+      detailedPage: "/projects/ResuMate",
     },
     {
       id: 2,
@@ -38,7 +41,11 @@ function AllProjects() {
 
           <div className="projects-grid">
               {projects.map((project) => (
-                  <div key={project.id} className="project-card">
+                  <div key={project.id} className="project-card" onClick={() => {
+                      if (project.detailedPage) {
+                          navigate(project.detailedPage);
+                      }
+                  }}>
                       <img src={project.image} alt={project.title} />
                       <h3>{project.title}</h3>
                       <p>{project.description}</p>
@@ -46,12 +53,11 @@ function AllProjects() {
                       {/* ✅ FIX: put inside map */}
                       {project.live && (
                           <div className="project-links">
-                              <a href={project.live} target="_blank" rel="noreferrer">
+                              <a href={project.live} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}> {/* e.stopPropagation prevents the click action of the project card when clicked on the live demo btn */}
                                   Click here for Live Demo
                               </a>
                           </div>
                       )}
-
                   </div>
               ))}
           </div>
