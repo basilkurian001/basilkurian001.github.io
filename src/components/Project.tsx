@@ -1,6 +1,6 @@
 import React from "react";
 import smartCanteenScreenshot from '../assets/images/smart_canteen_screenshot.png'
-import ShipSimScreenshot from '../assets/images/ship_sim_screenshot.png'
+import ResuMateScreenshot from '../assets/images/resumate_screenshot.png'
 import '../assets/styles/Project.scss';
 import { useNavigate } from "react-router-dom";
 
@@ -15,10 +15,10 @@ function Project() {
                     <h2>Smart Canteen</h2>
                     <p>A full stack application designed to make canteen operations more efficient.</p>
                 </div>
-                <div className="project">
-                    <img src={ShipSimScreenshot} className="zoom" alt="thumbnail" width="100%" />
-                    <h2>Ship Simulator</h2>
-                    <p>A Ship Simulator built using Unity Engine.</p>
+                <div className="project" onClick={() => navigate("/projects/ResuMate")}>
+                    <img src={ResuMateScreenshot} className="zoom" alt="thumbnail" width="100%" />
+                    <h2>ResuMate - AI</h2>
+                    <p>An Ai based resume analyzer designed to make your resume more professional using the power of Artificial Intelligence.</p>
                 </div>
             </div>
 
@@ -27,7 +27,7 @@ function Project() {
                     View All Projects →
                 </button>
             </div>
-        </div>
+        </div >
     );
 }
 

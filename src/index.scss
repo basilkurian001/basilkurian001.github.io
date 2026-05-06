@@ -243,6 +243,7 @@ button {
   padding: 15px;
   border-radius: 10px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .project-card img {
@@ -325,3 +326,10 @@ button {
 }
 
 //=============================================
+
+//=====HOME PAGE PROJECT============
+.project {
+  cursor: pointer;
+}
+
+//================================
